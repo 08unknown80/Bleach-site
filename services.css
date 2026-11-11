@@ -1,0 +1,101 @@
+/* ==========================================================
+   services.css — доповнення до Bootstrap для services.html / thanks.html
+   ЛР14: Петрик Станіслав, М-КІ-52
+   ========================================================== */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f1ee;
+}
+
+.brand,
+.section-title {
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 1px;
+}
+
+.section-title {
+    color: #ff6b00;
+    text-transform: uppercase;
+}
+
+.border-warning {
+    border-color: #ff6b00 !important;
+}
+
+.text-warning {
+    color: #ff6b00 !important;
+}
+
+.btn-warning {
+    background-color: #ff6b00;
+    border-color: #ff6b00;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-warning:hover {
+    background-color: #111114;
+    border-color: #111114;
+    color: #fff;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+    color: #ff6b00 !important;
+}
+
+.service-card {
+    border: none;
+    border-top: 4px solid #ff6b00;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* ---------- Інтерактивне SVG ---------- */
+.my-svg-icon {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.my-svg-icon .wing {
+    fill: #111114;               /* Чорні крила пекельного метелика */
+    stroke: #ff6b00;
+    stroke-width: 1.5;
+    transition: 0.4s;
+}
+
+.my-svg-icon .spot {
+    fill: #d6336c;               /* Рожево-червоний візерунок */
+    transition: 0.4s;
+}
+
+.my-svg-icon .body {
+    fill: #333;
+}
+
+.my-svg-icon .antenna {
+    fill: none;
+    stroke: #333;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+}
+
+/* Стан при наведенні: змінюємо fill / stroke через CSS */
+.my-svg-icon:hover .wing {
+    fill: #ff6b00;
+    stroke: #c1121f;
+}
+
+.my-svg-icon:hover .spot {
+    fill: #fff;
+}
+
+.my-svg-icon:hover {
+    transform: scale(1.1);
+    transform-origin: center;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Послуги фан-клубу — Soul Society</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Russo+One&display=swap" rel="stylesheet">
+    <!-- Власні стилі для цієї сторінки (щоб не конфліктувати з Reboot CSS Bootstrap) -->
+    <link rel="stylesheet" href="services.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Навігація Bootstrap (navbar) -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-black border-bottom border-3 border-warning">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2 brand" href="index.html">
+                    <img src="img/logo.png" alt="Логотип Soul Society" width="40" height="40">
+                    SOUL SOCIETY
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Меню">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Головна</a></li>
+                        <li class="nav-item"><a class="nav-link" href="characters.html">Персонажі</a></li>
+                        <li class="nav-item"><a class="nav-link" href="price.html">Мерч і розклад</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="services.html">Послуги</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacts.html">Контакти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Картки послуг: Grid Bootstrap (row + col) + Cards -->
+        <div class="container mt-5">
+            <h2 class="text-center mb-2 section-title">Наші послуги</h2>
+            <p class="text-center text-secondary mb-4">Сторінку зверстано за допомогою фреймворку Bootstrap 5</p>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm service-card">
+                        <div class="card-body text-center">
+                            <i class="fa-solid fa-tv fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title fw-bold">Спільні перегляди</h5>
+                            <p class="card-text">Щосуботи о 18:00 дивимося нові серії «Тисячолітньої кривавої війни» на великому екрані.</p>
+                            <span class="badge bg-success mb-3">Безкоштовно</span><br>
+                            <a href="price.html" class="btn btn-warning">Розклад</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm service-card">
+                        <div class="card-body text-center">
+                            <i class="fa-solid fa-shirt fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title fw-bold">Косплей-ательє</h5>
+                            <p class="card-text">Пошиття косоде, хаорі капітанів та уніформи арранкарів за вашими мірками.</p>
+                            <span class="badge bg-dark mb-3">від 1500 грн</span><br>
+                            <a href="contacts.html" class="btn btn-warning">Замовити</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm service-card">
+                        <div class="card-body text-center">
+                            <i class="fa-solid fa-box-open fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title fw-bold">Доставка мерчу</h5>
+                            <p class="card-text">Відправляємо фігурки та постери Новою поштою по всій Україні за 1–3 дні.</p>
+                            <span class="badge bg-danger mb-3">−10% для членів клубу</span><br>
+                            <a href="index.html#merch" class="btn btn-warning">Каталог</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Utilities Bootstrap: відступи, кольори, flex -->
+        <div class="container mt-5">
+            <div class="p-4 bg-light rounded-3 d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+                <div>
+                    <h4 class="fw-bold mb-1"><i class="fa-solid fa-users text-warning me-2"></i>Членство у фан-клубі</h4>
+                    <p class="mb-0 text-secondary">Знижки на мерч, доступ до закритих переглядів та
+                        <span class="text-danger fw-bold">щомісячні турніри</span>.</p>
+                </div>
+                <a href="contacts.html" class="btn btn-dark btn-lg"><i class="fa-solid fa-user-plus me-2"></i>Вступити</a>
+            </div>
+        </div>
+
+        <!-- Інтерактивне SVG -->
+        <div class="container text-center mt-5 mb-5">
+            <h3 class="section-title">Інтерактивне SVG: пекельний метелик</h3>
+            <p class="text-secondary">Наведіть курсор — метелик змінить колір (властивості <code>fill</code> та <code>stroke</code> змінюються через CSS)</p>
+
+            <svg class="my-svg-icon" width="220" height="190" viewBox="0 0 120 100" role="img" aria-label="Пекельний метелик">
+                <!-- Крила -->
+                <path class="wing" d="M60 50 C40 8, 4 8, 9 40 C12 56, 40 56, 60 50 Z" />
+                <path class="wing" d="M60 50 C80 8, 116 8, 111 40 C108 56, 80 56, 60 50 Z" />
+                <path class="wing" d="M60 53 C45 60, 20 74, 29 90 C39 99, 55 76, 60 56 Z" />
+                <path class="wing" d="M60 53 C75 60, 100 74, 91 90 C81 99, 65 76, 60 56 Z" />
+                <!-- Візерунок на крилах -->
+                <ellipse class="spot" cx="28" cy="34" rx="7" ry="4" />
+                <ellipse class="spot" cx="92" cy="34" rx="7" ry="4" />
+                <circle class="spot" cx="36" cy="80" r="3.5" />
+                <circle class="spot" cx="84" cy="80" r="3.5" />
+                <!-- Тіло та вусики -->
+                <ellipse class="body" cx="60" cy="54" rx="3" ry="17" />
+                <path class="antenna" d="M59 38 C56 27, 51 21, 45 18" />
+                <path class="antenna" d="M61 38 C64 27, 69 21, 75 18" />
+            </svg>
+        </div>
+    </main>
+
+    <!-- Притиснутий футер (Sticky Footer): mt-auto -->
+    <footer class="mt-auto bg-dark text-white p-3 text-center">
+        <div class="mb-2">
+            <a href="https://instagram.com" target="_blank" class="text-warning mx-2 fs-4" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://t.me" target="_blank" class="text-warning mx-2 fs-4" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://www.youtube.com/@vizmedia" target="_blank" class="text-warning mx-2 fs-4" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        &copy; 2026 Soul Society. Автор: Петрик Станіслав, група М-КІ-52
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

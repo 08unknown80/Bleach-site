@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти — Soul Society</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+    <header class="main-header" id="top">
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Логотип фан-клубу Soul Society — ієрогліфи «шінігамі»" width="50">
+            <span>Soul Society</span>
+        </a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="characters.html">Персонажі</a></li>
+                <li><a href="price.html">Мерч і розклад</a></li>
+                <li><a href="services.html">Послуги</a></li>
+                <li><a href="contacts.html" class="active">Контакти</a></li>
+            </ul>
+        </nav>
+        <button id="open-modal-btn" class="btn-header">Вступити до клубу</button>
+        <button class="hamburger" aria-label="Меню">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+    <!-- Мобільне меню, що виїжджає збоку -->
+    <nav class="mobile-menu">
+        <a href="index.html">Головна</a>
+        <a href="characters.html">Персонажі</a>
+        <a href="price.html">Мерч і розклад</a>
+        <a href="services.html">Послуги</a>
+        <a href="contacts.html" class="active">Контакти</a>
+    </nav>
+    <main class="container">
+        <section class="page-title">
+            <h1>Контакти</h1>
+            <p>Зв'яжіться з фан-клубом Soul Society</p>
+        </section>
+
+        <section class="about-section">
+            <h2>Зв'яжіться з нами</h2>
+            <p>
+                Телефон: <a href="tel:+380991234567">+38 (099) 123-45-67</a>
+            </p>
+            <p>
+                Email: <a href="mailto:info@soulsociety-fan.ua">info@soulsociety-fan.ua</a>
+            </p>
+            <p>
+                Telegram-чат фанатів: <a href="https://t.me" target="_blank">@soulsociety_ua</a>
+            </p>
+        </section>
+
+        <hr>
+
+        <section class="about-section">
+            <h2>Напишіть нам / Вступ до фан-клубу</h2>
+            <form action="#" method="POST">
+
+                <div>
+                    <label for="username">Ваше ім'я:</label><br>
+                    <input type="text" id="username" name="username" placeholder="Наприклад, Ічіґо" required>
+                </div>
+                <br>
+
+                <div>
+                    <label for="useremail">Ваш Email:</label><br>
+                    <input type="email" id="useremail" name="useremail" placeholder="example@mail.com" required>
+                </div>
+                <br>
+
+                <div>
+                    <label for="userpass">Пароль (для реєстрації в клубі):</label><br>
+                    <input type="password" id="userpass" name="password" minlength="6">
+                </div>
+                <br>
+
+                <div>
+                    <label for="topic">Тема звернення:</label>
+                    <select id="topic" name="topic">
+                        <option value="join">Вступ до фан-клубу</option>
+                        <option value="merch">Замовлення мерчу</option>
+                        <option value="cosplay">Косплей-фестиваль</option>
+                        <option value="other">Інше</option>
+                    </select>
+                </div>
+                <br>
+
+                <div>
+                    <p>Ваша фракція:</p>
+                    <input type="radio" id="shinigami" name="faction" value="shinigami" checked>
+                    <label for="shinigami">Шінігамі</label>
+
+                    <input type="radio" id="quincy" name="faction" value="quincy">
+                    <label for="quincy">Квінсі</label>
+
+                    <input type="radio" id="arrancar" name="faction" value="arrancar">
+                    <label for="arrancar">Арранкар</label>
+                </div>
+                <br>
+
+                <div>
+                    <label for="message">Повідомлення:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="40"
+                        placeholder="Розкажіть, хто ваш улюблений персонаж..."></textarea>
+                </div>
+                <br>
+
+                <div>
+                    <input type="checkbox" id="news" name="news" value="yes">
+                    <label for="news">Підписатися на новини про нові серії</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">Я даю згоду на обробку даних</label>
+                </div>
+                <br>
+
+                <button type="submit">Надіслати</button>
+                <button type="reset">Очистити</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section class="about-section">
+            <h2>Адреса фан-клубу</h2>
+            <p>вул. Каракурська, 15<br>
+                м. Київ, 01001<br>
+                Збори щосуботи о <strong>18:00</strong></p>
+            <p><a href="https://www.google.com/maps/search/Київ" target="_blank">Відкрити на Google Maps</a></p>
+        </section>
+
+        <hr>
+
+        <section class="about-section">
+            <h2>Корисні посилання</h2>
+            <ul>
+                <li><a href="index.html#advantages">Чому варто подивитися Bleach</a> (на головній)</li>
+                <li><a href="index.html#trailer">Офіційний трейлер</a> (на головній)</li>
+                <li><a href="https://bleach.fandom.com" target="_blank">Bleach Wiki</a> — енциклопедія всесвіту</li>
+            </ul>
+        </section>
+    </main>
+
+
+    <footer id="footer" class="main-footer">
+        <div class="footer-cols">
+            <div class="footer-col">
+                <h4>Soul Society</h4>
+                <p>Фан-клуб аніме Bleach у Києві.<br>Збори щосуботи о 18:00.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Розділи</h4>
+                <ul>
+                    <li><a href="characters.html">Персонажі</a></li>
+                    <li><a href="price.html">Мерч і розклад</a></li>
+                <li><a href="services.html">Послуги</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Ми в соцмережах</h4>
+                <ul>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://t.me" target="_blank">Telegram</a></li>
+                    <li><a href="https://www.youtube.com/@vizmedia" target="_blank">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 Soul Society. Фан-сайт створено в навчальних цілях.
+            Автор: Петрик Станіслав, група М-КІ-52</p>
+    </footer>
+    </div>
+    <!-- Модальне вікно (ЛР15) -->
+    <div class="modal-overlay" id="my-modal">
+        <div class="modal-window" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <span class="close-modal" title="Закрити">&times;</span>
+            <h2 id="modal-title">Залиште заявку</h2>
+            <p>Заповніть форму — і ми зателефонуємо, щоб запросити вас на найближчий перегляд.</p>
+            <form action="thanks.html" method="GET">
+                <input type="text" name="name" placeholder="Ваше ім'я" required>
+                <input type="tel" name="phone" placeholder="Ваш телефон" required>
+                <select name="faction" aria-label="Фракція">
+                    <option value="shinigami">Шінігамі</option>
+                    <option value="quincy">Квінсі</option>
+                    <option value="arrancar">Арранкар</option>
+                </select>
+                <button type="submit">Надіслати</button>
+            </form>
+        </div>
+    </div>
+
+    <a href="#" class="back-to-top" title="Вгору">↑</a>
+
+    <script src="script.js"></script>
+</body>
+</html>

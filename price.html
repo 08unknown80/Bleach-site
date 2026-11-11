@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мерч і розклад — Soul Society</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+    <header class="main-header" id="top">
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Логотип фан-клубу Soul Society — ієрогліфи «шінігамі»" width="50">
+            <span>Soul Society</span>
+        </a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="characters.html">Персонажі</a></li>
+                <li><a href="price.html" class="active">Мерч і розклад</a></li>
+                <li><a href="services.html">Послуги</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+        <button id="open-modal-btn" class="btn-header">Вступити до клубу</button>
+        <button class="hamburger" aria-label="Меню">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+    <!-- Мобільне меню, що виїжджає збоку -->
+    <nav class="mobile-menu">
+        <a href="index.html">Головна</a>
+        <a href="characters.html">Персонажі</a>
+        <a href="price.html" class="active">Мерч і розклад</a>
+        <a href="services.html">Послуги</a>
+        <a href="contacts.html">Контакти</a>
+    </nav>
+    <main class="container">
+        <section class="page-title">
+            <h1>Мерч і розклад фан-клубу</h1>
+            <p>Ціни на атрибутику Bleach та графік спільних переглядів</p>
+        </section>
+
+        <!-- Таблиця 1: простий прайс-лист з thead / tbody / tfoot -->
+        <section class="about-section">
+            <h2>Прайс-лист</h2>
+            <table border="1" width="100%" cellpadding="10" cellspacing="0">
+                <caption>Ціни на мерч фан-клубу Soul Society</caption>
+                <thead>
+                    <tr>
+                        <th>Товар</th>
+                        <th>Опис</th>
+                        <th>Ціна (грн)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Фігурка Ічіґо Куросакі</td>
+                        <td>PVC, 18 см, банкай-форма з мечем Тенса Занґецу</td>
+                        <td>1450</td>
+                    </tr>
+                    <tr>
+                        <td>Постер «Рукія Кучікі»</td>
+                        <td>Формат A2, матовий папір</td>
+                        <td>250</td>
+                    </tr>
+                    <tr>
+                        <td>Хаорі капітана 10-го загону</td>
+                        <td>Косплей-накидка Тоширо Хіцуґаї, розміри S–XL</td>
+                        <td>1900</td>
+                    </tr>
+                    <tr>
+                        <td>Маска пустого (репліка)</td>
+                        <td>Пластик, ручне фарбування, з резинкою</td>
+                        <td>850</td>
+                    </tr>
+                    <tr>
+                        <td>Капелюх Кіске Урахари</td>
+                        <td>Смугастий капелюх-панама, бавовна</td>
+                        <td>600</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Середня вартість товару:</td>
+                        <td>1010</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Таблиця 2: складна структура з rowspan та colspan -->
+        <section class="about-section">
+            <h2>Графік роботи фан-клубу</h2>
+            <table border="1" width="100%" cellpadding="10" cellspacing="0">
+                <caption>Розклад на тиждень</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2">День</th>
+                        <th colspan="2">Години роботи</th>
+                        <th rowspan="2">Перерва</th>
+                        <th rowspan="2">Подія</th>
+                    </tr>
+                    <tr>
+                        <th>Відкриття</th>
+                        <th>Закриття</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Понеділок</td>
+                        <td>12:00</td>
+                        <td>20:00</td>
+                        <td rowspan="5">15:00 – 15:30</td>
+                        <td>Продаж мерчу</td>
+                    </tr>
+                    <tr>
+                        <td>Вівторок</td>
+                        <td>12:00</td>
+                        <td>20:00</td>
+                        <td>Клуб малювання манґи</td>
+                    </tr>
+                    <tr>
+                        <td>Середа</td>
+                        <td>12:00</td>
+                        <td>20:00</td>
+                        <td>Продаж мерчу</td>
+                    </tr>
+                    <tr>
+                        <td>Четвер</td>
+                        <td>12:00</td>
+                        <td>20:00</td>
+                        <td>Майстер-клас з косплею</td>
+                    </tr>
+                    <tr>
+                        <td>П'ятниця</td>
+                        <td>12:00</td>
+                        <td>21:00</td>
+                        <td>Вікторина «Знавець Ґотею 13»</td>
+                    </tr>
+                    <tr>
+                        <td>Субота</td>
+                        <td>14:00</td>
+                        <td>23:00</td>
+                        <td>Без перерви</td>
+                        <td><strong>Спільний перегляд серій о 18:00</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Неділя</td>
+                        <td colspan="4">Вихідний — душі відпочивають у Руконґаї</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+
+    <footer id="footer" class="main-footer">
+        <div class="footer-cols">
+            <div class="footer-col">
+                <h4>Soul Society</h4>
+                <p>Фан-клуб аніме Bleach у Києві.<br>Збори щосуботи о 18:00.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Розділи</h4>
+                <ul>
+                    <li><a href="characters.html">Персонажі</a></li>
+                    <li><a href="price.html">Мерч і розклад</a></li>
+                <li><a href="services.html">Послуги</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Ми в соцмережах</h4>
+                <ul>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://t.me" target="_blank">Telegram</a></li>
+                    <li><a href="https://www.youtube.com/@vizmedia" target="_blank">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 Soul Society. Фан-сайт створено в навчальних цілях.
+            Автор: Петрик Станіслав, група М-КІ-52</p>
+    </footer>
+    </div>
+    <!-- Модальне вікно (ЛР15) -->
+    <div class="modal-overlay" id="my-modal">
+        <div class="modal-window" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <span class="close-modal" title="Закрити">&times;</span>
+            <h2 id="modal-title">Залиште заявку</h2>
+            <p>Заповніть форму — і ми зателефонуємо, щоб запросити вас на найближчий перегляд.</p>
+            <form action="thanks.html" method="GET">
+                <input type="text" name="name" placeholder="Ваше ім'я" required>
+                <input type="tel" name="phone" placeholder="Ваш телефон" required>
+                <select name="faction" aria-label="Фракція">
+                    <option value="shinigami">Шінігамі</option>
+                    <option value="quincy">Квінсі</option>
+                    <option value="arrancar">Арранкар</option>
+                </select>
+                <button type="submit">Надіслати</button>
+            </form>
+        </div>
+    </div>
+
+    <a href="#" class="back-to-top" title="Вгору">↑</a>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soul Society — фан-сайт аніме Bleach</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+    <header class="main-header" id="top">
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Логотип фан-клубу Soul Society — ієрогліфи «шінігамі»" width="50">
+            <span>Soul Society</span>
+        </a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">Головна</a></li>
+                <li><a href="characters.html">Персонажі</a></li>
+                <li><a href="price.html">Мерч і розклад</a></li>
+                <li><a href="services.html">Послуги</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+        <button id="open-modal-btn" class="btn-header">Вступити до клубу</button>
+        <button class="hamburger" aria-label="Меню">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+    <!-- Мобільне меню, що виїжджає збоку -->
+    <nav class="mobile-menu">
+        <a href="index.html" class="active">Головна</a>
+        <a href="characters.html">Персонажі</a>
+        <a href="price.html">Мерч і розклад</a>
+        <a href="services.html">Послуги</a>
+        <a href="contacts.html">Контакти</a>
+    </nav>
+
+    <main>
+        <!-- Hero-слайдер (Swiper.js) -->
+        <section class="hero">
+            <div class="swiper heroSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url('img/seireitei.jpg');">
+                        <div class="slide-content">
+                            <p class="hero-kicker">Фан-клуб аніме</p>
+                            <h1>Bleach: світ шінігамі</h1>
+                            <p>Енциклопедія персонажів, мерч та спільні перегляди «Тисячолітньої кривавої війни»</p>
+                            <div class="hero-buttons">
+                                <a href="characters.html" class="btn">Персонажі</a>
+                                <a href="#merch" class="btn btn-outline">Мерч</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('img/hueco-mundo.jpg');">
+                        <div class="slide-content">
+                            <p class="hero-kicker">Арка «Уеко Мундо»</p>
+                            <h2>Пустеля вічної ночі</h2>
+                            <p>Світ пустих та арранкарів, де Ічіґо кидає виклик Еспаді, щоб урятувати Оріхіме</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('img/karakura.jpg');">
+                        <div class="slide-content">
+                            <p class="hero-kicker">Місто Каракура</p>
+                            <h2>Звідси все почалося</h2>
+                            <p>Звичайне японське місто, де школяр Ічіґо Куросакі вперше зустрів Рукію</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- Анімована підказка «гортай униз» -->
+            <a href="#features" class="scroll-down" aria-label="Гортати вниз">
+                <span>↓</span>
+            </a>
+        </section>
+
+        <div class="container">
+            <!-- Переваги: три картки в ряд (Flexbox + gap) -->
+            <section class="features" id="features">
+                <div class="feature-card">
+                    <span class="feature-icon">刀</span>
+                    <h3>Енциклопедія</h3>
+                    <p>Усі капітани Ґотею 13, Еспада та квінсі в одному місці.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">魂</span>
+                    <h3>Спільнота</h3>
+                    <p>Щосуботи дивимося нові серії разом на великому екрані.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">虚</span>
+                    <h3>Мерч</h3>
+                    <p>Фігурки, постери та косплей за доступними цінами.</p>
+                </div>
+            </section>
+
+            <!-- Таби (вкладки) -->
+            <section class="about-section tabs-container" id="about">
+                <h2>Про аніме Bleach</h2>
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="desc">Опис</button>
+                    <button class="tab-btn" data-tab="chars">Характеристики</button>
+                    <button class="tab-btn" data-tab="facts">Цікаві факти</button>
+                </div>
+
+                <div class="tabs-body">
+                <div id="desc" class="tab-content active">
+                <p><img src="img/ichigo.jpg" alt="Ічіґо Куросакі — головний герой Bleach" class="float-img">
+                    <strong>Bleach</strong> — японська манґа, яку створив <strong>Тайто Кубо</strong>.
+                    Вона виходила в журналі <em>Weekly Shōnen Jump</em> з <strong>2001 по 2016 рік</strong>
+                    і налічує 74 томи. Аніме-адаптацію від студії <em>Pierrot</em> показували у 2004–2012 роках
+                    (366 епізодів), а у <strong>2022 році</strong> стартувало продовження —
+                    <em>«Тисячолітня кривава війна»</em>.</p>
+                <p>Головний герой — п'ятнадцятирічний <strong>Ічіґо Куросакі</strong>, який бачить привидів.
+                    Одного вечора він отримує силу <em>шінігамі</em> (бога смерті) від <strong>Рукії Кучікі</strong>
+                    і відтоді захищає людей від <em>пустих</em> — злих духів, що пожирають душі.</p>
+                <p>Разом із друзями — Оріхіме Іноуе, Ясуторою Садо та квінсі Урю Ішидою — Ічіґо вирушає
+                    до Товариства душ, щоб урятувати Рукію від страти. Ця подорож відкриває змову капітана
+                    <strong>Сосуке Айзена</strong>, війну з арранкарами Уеко Мундо, а згодом — битву з
+                    імперією квінсі Вандерайх та її володарем <strong>Ювахом</strong>.</p>
+                <p>Особливість Bleach — у поєднанні японської естетики (кімоно, катани, храмова архітектура)
+                    з сучасним стилем: рок-музикою, модним одягом героїв та яскравою графікою.</p>
+                <div class="clearfix"></div>
+                </div>
+
+                <div id="chars" class="tab-content">
+                    <table class="specs">
+                        <tr><th>Автор манґи</th><td>Тайто Кубо</td></tr>
+                        <tr><th>Журнал</th><td>Weekly Shōnen Jump (Shueisha)</td></tr>
+                        <tr><th>Роки виходу манґи</th><td>2001 – 2016, 74 томи</td></tr>
+                        <tr><th>Студія аніме</th><td>Pierrot</td></tr>
+                        <tr><th>Перший сезон</th><td>2004 – 2012, 366 епізодів</td></tr>
+                        <tr><th>Продовження</th><td>«Тисячолітня кривава війна» (з 2022 року)</td></tr>
+                        <tr><th>Композитор</th><td>Широ Саґісу</td></tr>
+                        <tr><th>Жанр</th><td>Сьонен, екшн, надприродне, пригоди</td></tr>
+                    </table>
+                </div>
+
+                <div id="facts" class="tab-content">
+                    <ul class="facts-list">
+                        <li>За задумом Тайто Кубо, шінігамі спочатку мали битися <strong>не мечами, а пістолетами</strong>.</li>
+                        <li>Спочатку Кубо хотів назвати манґу «Black» — за кольором одягу шінігамі, але обрав «Bleach» (англ. «відбілювач»), що асоціюється з білим.</li>
+                        <li>Кожен том манґи відкривається коротким віршем від автора.</li>
+                        <li>Після 10-річної перерви аніме повернулося у 2022 році, щоб екранізувати фінальну арку.</li>
+                    </ul>
+                </div>
+                </div>
+            </section>
+
+            <!-- Галерея на CSS Grid (bento-сітка) -->
+            <section class="about-section">
+                <h2 id="gallery">Світи Bleach</h2>
+                <div class="gallery">
+                    <div class="gallery-item item-1">
+                        <img src="img/seireitei.jpg" alt="Сейрейтей — місто шінігамі">
+                        <span class="gallery-caption">Сейрейтей</span>
+                    </div>
+                    <div class="gallery-item item-2">
+                        <img src="img/soul-society.jpg" alt="Небо над Товариством душ">
+                        <span class="gallery-caption">Товариство душ</span>
+                    </div>
+                    <div class="gallery-item item-3">
+                        <img src="img/hueco-mundo.jpg" alt="Пустеля Уеко Мундо">
+                        <span class="gallery-caption">Уеко Мундо</span>
+                    </div>
+                    <div class="gallery-item item-4">
+                        <img src="img/las-noches.jpg" alt="Палац Лас Ночес">
+                        <span class="gallery-caption">Лас Ночес</span>
+                    </div>
+                    <div class="gallery-item item-5">
+                        <img src="img/karakura.jpg" alt="Панорама міста Каракура">
+                        <span class="gallery-caption">Каракура</span>
+                    </div>
+                    <div class="gallery-item item-6">
+                        <img src="img/hell-butterfly.jpg" alt="Пекельний метелик — посланець шінігамі">
+                        <span class="gallery-caption">Пекельний метелик</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-section">
+                <h2 id="advantages">Чому варто подивитися Bleach</h2>
+                <ol>
+                    <li>Неймовірно стильні персонажі та <strong>13 загонів Ґотею</strong>.</li>
+                    <li>Епічні битви з <em>шікаєм</em> та <em>банкаєм</em>.</li>
+                    <li>Легендарний саундтрек композитора <strong>Широ Саґісу</strong>.</li>
+                    <li>Цілий всесвіт: Світ живих, Товариство душ, Уеко Мундо.</li>
+                </ol>
+            </section>
+
+            <section class="about-section">
+                <h2 id="trailer">Офіційний трейлер «Тисячолітньої кривавої війни»</h2>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1sygUhb8Q2Y"
+                        title="Official Trailer #1 | BLEACH: Thousand-Year Blood War | VIZ" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p class="center">Джерело: <a href="https://www.youtube.com/@vizmedia" target="_blank">офіційний YouTube-канал VIZ Media</a>.</p>
+            </section>
+
+            <!-- Каталог: flex-wrap -->
+            <section class="about-section">
+                <h2 id="merch">Мерч фан-клубу</h2>
+                <div class="catalog">
+                    <div class="product-item">
+                        <span class="badge">New</span>
+                        <img src="img/ichigo.jpg" alt="Фігурка Ічіґо Куросакі">
+                        <h3>Фігурка Ічіґо</h3>
+                        <p>PVC, 18 см, банкай-форма</p>
+                        <p class="price">1450 грн</p>
+                        <button>Купити</button>
+                    </div>
+                    <div class="product-item">
+                        <span class="badge badge-sale">Sale −20%</span>
+                        <img src="img/rukia.jpg" alt="Постер з Рукією Кучікі">
+                        <h3>Постер «Рукія»</h3>
+                        <p>Формат A2, матовий папір</p>
+                        <p class="price"><s>310 грн</s> 250 грн</p>
+                        <button>Купити</button>
+                    </div>
+                    <div class="product-item">
+                        <span class="badge badge-hit">Хіт</span>
+                        <img src="img/toshiro.jpg" alt="Хаорі капітана Тоширо Хіцуґаї">
+                        <h3>Хаорі 10-го загону</h3>
+                        <p>Косплей-накидка, S–XL</p>
+                        <p class="price">1900 грн</p>
+                        <button>Купити</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="img/ulquiorra.jpg" alt="Маска пустого в стилі Улькіорри">
+                        <h3>Маска пустого</h3>
+                        <p>Репліка, ручне фарбування</p>
+                        <p class="price">850 грн</p>
+                        <button>Купити</button>
+                    </div>
+                    <div class="product-item">
+                        <span class="badge badge-sale">Sale −15%</span>
+                        <img src="img/urahara.jpg" alt="Капелюх Кіске Урахари">
+                        <h3>Капелюх Урахари</h3>
+                        <p>Смугаста панама, бавовна</p>
+                        <p class="price"><s>700 грн</s> 600 грн</p>
+                        <button>Купити</button>
+                    </div>
+                    <div class="product-item">
+                        <span class="badge">New</span>
+                        <img src="img/byakuya.jpg" alt="Шарф Бякуї Кучікі">
+                        <h3>Шарф Ґінпаку</h3>
+                        <p>Шарф Бякуї Кучікі, шовк</p>
+                        <p class="price">990 грн</p>
+                        <button>Купити</button>
+                    </div>
+                </div>
+                <p class="center"><a href="price.html">Повний прайс-лист →</a></p>
+            </section>
+
+            <!-- Відгуки: Swiper з breakpoints -->
+            <section class="about-section">
+                <h2 id="reviews">Відгуки учасників клубу</h2>
+                <div class="swiper reviewsSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide review">
+                            <img src="img/ichigo.jpg" alt="Аватар" class="avatar">
+                            <p>«Нарешті знайшов людей, з якими можна годинами сперечатися про банкаї!»</p>
+                            <h4>Олег, «Strawberry_15»</h4>
+                        </div>
+                        <div class="swiper-slide review">
+                            <img src="img/rukia.jpg" alt="Аватар" class="avatar">
+                            <p>«Спільні перегляди — це атмосфера кінотеатру, тільки всі в косплеї.»</p>
+                            <h4>Марія, «Sode_no_Shirayuki»</h4>
+                        </div>
+                        <div class="swiper-slide review">
+                            <img src="img/toshiro.jpg" alt="Аватар" class="avatar">
+                            <p>«Хаорі 10-го загону сидить ідеально. Якість пошиття — вогонь, тобто лід.»</p>
+                            <h4>Андрій, «Hyorinmaru»</h4>
+                        </div>
+                        <div class="swiper-slide review">
+                            <img src="img/kenpachi.jpg" alt="Аватар" class="avatar">
+                            <p>«Вікторина про Ґотей 13 була складною, але я переміг. Хочу ще битв!»</p>
+                            <h4>Дмитро, «Zaraki_11»</h4>
+                        </div>
+                        <div class="swiper-slide review">
+                            <img src="img/orihime.jpg" alt="Аватар" class="avatar">
+                            <p>«Дуже дружня спільнота, мене тут прийняли як рідну. Дякую!»</p>
+                            <h4>Анна, «Shun_Shun_Rikka»</h4>
+                        </div>
+                        <div class="swiper-slide review">
+                            <img src="img/urahara.jpg" alt="Аватар" class="avatar">
+                            <p>«Капелюх Урахари — найкраща покупка року. Тепер я загадковий.»</p>
+                            <h4>Ігор, «Benihime»</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <section class="about-section">
+                <h2>Де нас знайти</h2>
+                <div class="find-us">
+                    <div class="card">
+                        <h3>Факт дня</h3>
+                        <p>За задумом Тайто Кубо, шінігамі спочатку мали битися <strong>не мечами, а пістолетами</strong>.</p>
+                    </div>
+                    <p>Фан-клуб «Soul Society»<br>
+                        вул. Каракурська, 15<br>
+                        м. Київ, 01001<br>
+                        Збори щосуботи о <strong>18:00</strong><br>
+                        <a href="contacts.html">Усі контакти фан-клубу →</a></p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer id="footer" class="main-footer">
+        <div class="footer-cols">
+            <div class="footer-col">
+                <h4>Soul Society</h4>
+                <p>Фан-клуб аніме Bleach у Києві.<br>Збори щосуботи о 18:00.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Музика для атмосфери</h4>
+                <audio controls>
+                    <source src="audio/mountain-emperor.mp3" type="audio/mpeg">
+                    Ваш браузер не підтримує аудіо.
+                </audio>
+                <p><small>«Mountain Emperor» — Kevin MacLeod (incompetech.com), CC BY 3.0</small></p>
+            </div>
+            <div class="footer-col">
+                <h4>Ми в соцмережах</h4>
+                <ul>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://t.me" target="_blank">Telegram</a></li>
+                    <li><a href="https://www.youtube.com/@vizmedia" target="_blank">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 Soul Society. Фан-сайт створено в навчальних цілях.
+            Автор: Петрик Станіслав, група М-КІ-52</p>
+    </footer>
+    </div>
+
+    <!-- Модальне вікно (ЛР15) -->
+    <div class="modal-overlay" id="my-modal">
+        <div class="modal-window" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <span class="close-modal" title="Закрити">&times;</span>
+            <h2 id="modal-title">Залиште заявку</h2>
+            <p>Заповніть форму — і ми зателефонуємо, щоб запросити вас на найближчий перегляд.</p>
+            <form action="thanks.html" method="GET">
+                <input type="text" name="name" placeholder="Ваше ім'я" required>
+                <input type="tel" name="phone" placeholder="Ваш телефон" required>
+                <select name="faction" aria-label="Фракція">
+                    <option value="shinigami">Шінігамі</option>
+                    <option value="quincy">Квінсі</option>
+                    <option value="arrancar">Арранкар</option>
+                </select>
+                <button type="submit">Надіслати</button>
+            </form>
+        </div>
+    </div>
+
+    <a href="#" class="back-to-top" title="Вгору">↑</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

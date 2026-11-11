@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Персонажі та світи — Soul Society</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+    <header class="main-header" id="top">
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Логотип фан-клубу Soul Society — ієрогліфи «шінігамі»" width="50">
+            <span>Soul Society</span>
+        </a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="characters.html" class="active">Персонажі</a></li>
+                <li><a href="price.html">Мерч і розклад</a></li>
+                <li><a href="services.html">Послуги</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+        <button id="open-modal-btn" class="btn-header">Вступити до клубу</button>
+        <button class="hamburger" aria-label="Меню">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+    <!-- Мобільне меню, що виїжджає збоку -->
+    <nav class="mobile-menu">
+        <a href="index.html">Головна</a>
+        <a href="characters.html" class="active">Персонажі</a>
+        <a href="price.html">Мерч і розклад</a>
+        <a href="services.html">Послуги</a>
+        <a href="contacts.html">Контакти</a>
+    </nav>
+    <main class="container">
+        <section class="page-title">
+            <h1>Персонажі та світи Bleach</h1>
+            <p>Енциклопедія фан-клубу Soul Society</p>
+            <p>На сторінці: <a href="#worlds">Світи та фракції</a> | <a href="#howto">Як стати шінігамі</a> |
+            <a href="#arcs">Арки аніме</a> | <a href="#top3">Топ-3 банкаї</a> | <a href="#glossary">Словник</a></p>
+        </section>
+
+        <!-- 1. Вкладений (багаторівневий) список -->
+        <section class="about-section">
+            <h2 id="worlds">Світи та фракції</h2>
+            <ul>
+                <li>Товариство душ (Soul Society)
+                    <ul>
+                        <li>Ґотей 13 — 13 загонів захисту
+                            <ul>
+                                <li>Капітани
+                                    <ul>
+                                        <li>Шіґекуні Ґенрюсай Ямамото — 1-й загін</li>
+                                        <li>Бякуя Кучікі — 6-й загін</li>
+                                        <li>Тоширо Хіцуґая — 10-й загін</li>
+                                        <li>Кенпачі Заракі — 11-й загін</li>
+                                    </ul>
+                                </li>
+                                <li>Лейтенанти
+                                    <ul>
+                                        <li>Ренджі Абарай — 6-й загін</li>
+                                        <li>Рукія Кучікі — 13-й загін</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Колишні капітани
+                            <ul>
+                                <li>Сосуке Айзен</li>
+                                <li>Кіске Урахара</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Уеко Мундо (Hueco Mundo)
+                    <ul>
+                        <li>Еспада — 10 найсильніших арранкарів
+                            <ul>
+                                <li>Улькіорра Сіфер — 4-й Еспада</li>
+                                <li>Ґріммджоу Джаґерджак — 6-й Еспада</li>
+                            </ul>
+                        </li>
+                        <li>Звичайні пусті (Холлоу)</li>
+                    </ul>
+                </li>
+                <li>Світ живих (місто Каракура)
+                    <ul>
+                        <li>Ічіґо Куросакі — тимчасовий шінігамі</li>
+                        <li>Оріхіме Іноуе</li>
+                        <li>Урю Ішида — квінсі</li>
+                    </ul>
+                </li>
+                <li>Імперія Вандерайх (квінсі)
+                    <ul>
+                        <li>Ювах — батько всіх квінсі</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- 2. Нумерований список з підсписком type="a" -->
+        <section class="about-section">
+            <h2 id="howto">Як стати шінігамі (Алгоритм)</h2>
+            <ol>
+                <li>Потрапити до Товариства душ після обряду <em>консо</em>.</li>
+                <li>Розвинути духовну силу — <strong>реяцу</strong>.</li>
+                <li>Вступити до Академії духовних мистецтв:
+                    <ol type="a">
+                        <li>Опанувати мистецтво меча — <em>занджюцу</em>.</li>
+                        <li>Вивчити заклинання — <em>кідо</em>.</li>
+                        <li>Тренувати швидкісні кроки — <em>шунпо</em>.</li>
+                    </ol>
+                </li>
+                <li>Дізнатися ім'я свого занпакто та отримати <strong>шікай</strong>.</li>
+                <li>Пройти розподіл до одного з 13 загонів.</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <!-- 3. Римська нумерація та start -->
+        <section class="about-section">
+            <h2 id="arcs">Основні арки аніме</h2>
+            <ol type="I">
+                <li>Агент шінігамі</li>
+                <li>Товариство душ: Проникнення</li>
+                <li>Арранкари</li>
+                <li>Уеко Мундо</li>
+                <li>Фальшива Каракура</li>
+            </ol>
+            <h3>Продовження (нумерація з VI):</h3>
+            <ol type="I" start="6">
+                <li>Втрачений агент</li>
+                <li>Тисячолітня кривава війна</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <!-- 4. Зворотна нумерація -->
+        <section class="about-section">
+            <h3 id="top3">Топ-3 банкаї за версією фан-клубу (зворотний відлік):</h3>
+            <ol reversed start="3">
+                <li>Сенбонзакура Каґеоші — Бякуя Кучікі</li>
+                <li>Дайґурен Хьорінмару — Тоширо Хіцуґая</li>
+                <li>Тенса Занґецу — Ічіґо Куросакі</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <!-- 5. Список визначень -->
+        <section class="about-section">
+            <h2 id="glossary">Словник світу Bleach</h2>
+            <dl>
+                <dt>Шінігамі</dt>
+                <dd>«Бог смерті» — воїн Товариства душ, що проводить душі померлих та знищує пустих.</dd>
+
+                <dt>Занпакто</dt>
+                <dd>Меч-душа шінігамі. Кожен занпакто має власне ім'я та характер.</dd>
+
+                <dt>Шікай</dt>
+                <dd>Перше вивільнення занпакто, яке досягається, коли шінігамі дізнається ім'я свого меча.</dd>
+
+                <dt>Банкай</dt>
+                <dd>Друге, остаточне вивільнення занпакто. На його опанування потрібно понад 10 років.</dd>
+
+                <dt>Пустий (Холлоу)</dt>
+                <dd>Душа, що загубилася і перетворилася на монстра в білій масці.</dd>
+
+                <dt>Арранкар</dt>
+                <dd>Пустий, який зняв маску й отримав силу, подібну до сили шінігамі.</dd>
+
+                <dt>Квінсі</dt>
+                <dd>Люди, що знищують пустих за допомогою луків з духовної енергії.</dd>
+            </dl>
+        </section>
+    </main>
+
+
+    <footer id="footer" class="main-footer">
+        <div class="footer-cols">
+            <div class="footer-col">
+                <h4>Soul Society</h4>
+                <p>Фан-клуб аніме Bleach у Києві.<br>Збори щосуботи о 18:00.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Розділи</h4>
+                <ul>
+                    <li><a href="characters.html">Персонажі</a></li>
+                    <li><a href="price.html">Мерч і розклад</a></li>
+                <li><a href="services.html">Послуги</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Ми в соцмережах</h4>
+                <ul>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://t.me" target="_blank">Telegram</a></li>
+                    <li><a href="https://www.youtube.com/@vizmedia" target="_blank">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 Soul Society. Фан-сайт створено в навчальних цілях.
+            Автор: Петрик Станіслав, група М-КІ-52</p>
+    </footer>
+    </div>
+    <!-- Модальне вікно (ЛР15) -->
+    <div class="modal-overlay" id="my-modal">
+        <div class="modal-window" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <span class="close-modal" title="Закрити">&times;</span>
+            <h2 id="modal-title">Залиште заявку</h2>
+            <p>Заповніть форму — і ми зателефонуємо, щоб запросити вас на найближчий перегляд.</p>
+            <form action="thanks.html" method="GET">
+                <input type="text" name="name" placeholder="Ваше ім'я" required>
+                <input type="tel" name="phone" placeholder="Ваш телефон" required>
+                <select name="faction" aria-label="Фракція">
+                    <option value="shinigami">Шінігамі</option>
+                    <option value="quincy">Квінсі</option>
+                    <option value="arrancar">Арранкар</option>
+                </select>
+                <button type="submit">Надіслати</button>
+            </form>
+        </div>
+    </div>
+
+    <a href="#" class="back-to-top" title="Вгору">↑</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
